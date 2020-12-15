@@ -1,5 +1,3 @@
-const dateData = new Date();
-
 const monthNames = [
   'January',
   'February',
@@ -30,7 +28,8 @@ let displayMilitaryTime = false;
 const timeDisplayButton = document.getElementById('timeDisplayButton');
 timeDisplayButton.addEventListener('click', timeFormat);
 
-function initiateDate(dateData) {
+function initiateDate() {
+  const dateData = new Date();
   const month = monthNames[dateData.getMonth()];
   const dayOfWeek = weekdays[dateData.getDay()];
   const date = dateData.getDate();
@@ -38,7 +37,8 @@ function initiateDate(dateData) {
   dateDisplay.textContent = `${dayOfWeek} ${month}, ${date}`;
 }
 
-function initiateTime(dateData) {
+function initiateTime() {
+  const dateData = new Date();
   const hours = dateData.getHours();
   const hoursMilitary = hours;
   const hoursStandard = hours > 12 ? hours - 12 : hours;
@@ -71,10 +71,10 @@ function addLeadingZero(time) {
   return time < 10 ? `0${time}` : time;
 }
 
-initiateDate(dateData);
-initiateTime(dateData);
+initiateTime();
+initiateDate();
 
 setInterval(() => {
-  initiateTime(dateData);
-  console.log('Im firing');
+  initiateTime();
+  initiateDate();
 }, 1000);
