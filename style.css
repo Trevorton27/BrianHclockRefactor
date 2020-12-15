@@ -1,38 +1,38 @@
 body {
-	background-image: url('Radar.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-image: url('Radar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
-	color: whitesmoke;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	min-height: 100vh;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
-.time {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	font-size: 3em;
+#time {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 3em;
 }
 
-.date {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	font-size: 3em;
+#date {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 3em;
 }
 
 button {
-	font-family: 'Roboto', sans-serif;
-	margin: 10px 0;
-	font-size: 1em;
-	padding: 10px 24px;
-	color: whitesmoke;
-	border: 1px solid whitesmoke;
-	background-color: #cf8bf3;
-	border-radius: 5px 5px;
-	outline: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 0;
+  font-size: 1em;
+  padding: 10px 24px;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background-color: #cf8bf3;
+  border-radius: 5px 5px;
+  outline: none;
 }
